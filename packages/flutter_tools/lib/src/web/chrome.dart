@@ -200,8 +200,9 @@ class ChromiumLauncher {
       // When the DevTools has focus we don't want to slow down the application.
       '--disable-background-timer-throttling',
       // Since we are using a temp profile, disable features that slow the
-      // Chrome launch.
-      '--disable-web-security'
+      // Chrome launch. check
+	  '--disable-extensions',
+      '--disable-web-security',
       '--disable-popup-blocking',
       '--bwsi',
       '--no-first-run',
